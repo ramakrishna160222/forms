@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REsults</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<table class="table table-bordered table-striped table-condensed">
+    <tr>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Picture</th>
+    </tr>
+    <tr>
+        {% for student in students %}
+        <td>
+            {{student.name}}
+        </td>
+        <td>{{student.branch}}</td>
+        <td>{{student.profile_pic}}</td>
+        <td>{{student.id}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

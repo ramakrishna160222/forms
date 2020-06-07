@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+</head>
+<body>
+<h1>Hii welcome to Forms</h1>
+<a href="myapp/insert">INsert Data</a>
+<a href="accounts/register">Register Here</a>
+<a href="myapp/show">Show Data</a>
+{% if user.is_authenticated %}
+ <a href="accounts/logout">LogOut</a>
+{% else %}
+<a href="accounts/login">LogIn</a>
+
+{% endif %}
+<li>Hello {{user.username}}</li>
+
+</body>
+</html>
